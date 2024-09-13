@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:url("cyan.png");
+    font-family: Arial, sans-serif;
+    background-color: hsl(184, 95%, 49%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px; /* Set a max-width for the grid to be centered */
+    text-align: center;
+    justify-items: center; /* Center icons inside their grid cells */
+}
+
+.icon {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the image and text horizontally */
+    height: 180px; /* Adjust height for the icons to accommodate larger images */
+}
+
+.icon:hover {
+    transform: scale(1.05);
+}
+
+.icon img {
+    width: 120px; /* Larger width */
+    height: 120px; /* Larger height */
+    align-items : center;
+}
+
+.icon p {
+    margin-top: 15px; /* Slightly increased space */
+    font-size: 18px;  /* Larger text size */
+}
